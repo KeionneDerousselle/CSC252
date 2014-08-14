@@ -1,6 +1,7 @@
 package edu.neumont.csc252.lab2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
@@ -10,8 +11,11 @@ public class HuffmanTree
 {
 	private Node<Byte> root;
 	private byte[] data;
+	private final static int BYTE_MIN = -128, BYTE_MAX = 127;
 	
-	private HashMap<Byte, Float> byteFrequencies = new HashMap<Byte, Float>();
+	//private HashMap<Byte, Float> byteFrequencies = new HashMap<Byte, Float>();
+	
+	private float[] byteFrequencies = new float[(BYTE_MAX + 1)* 2];
 	
 	private PriorityQueue<Node<Byte>> frequencyQueue = new PriorityQueue<Node<Byte>>();
 	
@@ -23,8 +27,31 @@ public class HuffmanTree
 		createTree();
 	}
 	
+	public HuffmanTree(int[] frequencyChart)
+	{
+		recordFrequencies(frequencyChart);
+		prioritizeFrequencies();
+		createTree();
+	}
+	
 	public byte[] getData() {
 		return data;
+	}
+	
+	private void recordFrequencies(int[] frequencyChart)
+	{
+		int total = 0;
+		
+		for(int i = 0; i < frequencyChart.length; i++)
+		{
+			total += frequencyChart[i];
+		}
+		for( int i = BYTE_MIN; i <= BYTE_MAX ; i++)
+		{
+			byteFrequencies[i + BYTE_MAX + 1] = (frequencyChart[i+BYTE_MAX + 1]/(float)total);
+			
+		}
+		
 	}
 	
 	private void collectFrequencies()
@@ -33,29 +60,26 @@ public class HuffmanTree
 		{
 			for(int i = 0; i< data.length; i++)
 			{
-				if(byteFrequencies.containsKey(data[i]))
-				{
-					float currentCount = byteFrequencies.get(data[i]);
-					byteFrequencies.put(data[i], currentCount + (1.0f/data.length));
-				}
-				else
-				{
-					byteFrequencies.put(data[i], (1.0f/data.length));
-				}
+				byteFrequencies[data[i] + BYTE_MAX  + 1] += (1.0f/data.length);
 			}
 		}
 	}
 	
 	private void prioritizeFrequencies()
 	{
-		if(byteFrequencies!= null && byteFrequencies.size() > 0)
+		if(byteFrequencies!= null && byteFrequencies.length > 0)
 		{
-			for(Byte b : byteFrequencies.keySet())
+			for(int i = 0; i< byteFrequencies.length; i++)
 			{
-				ArrayList<Byte> value = new ArrayList<Byte>();
-				value.add(b);
+				float frequency = byteFrequencies[i];
 				
-				frequencyQueue.add(new Node<Byte>(value,byteFrequencies.get(b)));
+				if(frequency != 0.0f)
+				{
+					ArrayList<Byte> value = new ArrayList<Byte>();
+					value.add((byte)(i + BYTE_MIN));
+					frequencyQueue.add(new Node<Byte>(value, frequency));
+				}
+				
 			}
 		}
 	}

@@ -23,14 +23,9 @@ public class HuffmanCompressor
 			compressedData = new byte[compressedSize];
 
 
-			int bitIndex = 0, byteIndex = 0;
+			int bitIndex = BITS_IN_A_BYTE - 1, byteIndex = 0;
 			while(!messageBits.isEmpty())
 			{
-				if(bitIndex == BITS_IN_A_BYTE)
-				{
-					bitIndex = 0;
-					byteIndex++;
-				}
 
 				boolean bit = messageBits.poll();
 
@@ -44,7 +39,15 @@ public class HuffmanCompressor
 					compressedData[byteIndex] = (byte) (compressedData[byteIndex] & ~(1 << bitIndex)); // set bit at bitIndex to 0
 				}
 
-				bitIndex++;
+				if(bitIndex == 0)
+				{
+					bitIndex = BITS_IN_A_BYTE - 1;
+					byteIndex++;
+				}
+				else
+				{
+					bitIndex--;
+				}
 			}
 
 		}
@@ -59,7 +62,7 @@ public class HuffmanCompressor
 	
 		for(int i = 0; i< data.length; i++)
 		{
-			for(int bitIndex = 0; bitIndex < BITS_IN_A_BYTE ; bitIndex++)
+			for(int bitIndex = BITS_IN_A_BYTE - 1; bitIndex >= 0 ; bitIndex--)
 			{
 				messageBits.add((data[i] & (1 << bitIndex)) != 0);
 			}
