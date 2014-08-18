@@ -31,38 +31,6 @@ public class HuffmanTreeTest {
 	
 	public static final int UNCOMPRESSED_IMAGE_SIZE = 54679;
 
-	@Test
-	public void testTreeBulding() {
-		HuffmanTree tree = new HuffmanTree(new byte[]{1,1,1,2,2,3,3,4,5,6});
-		tree.preorderTraverse();
-	}
-	
-	@Test
-	public void getByteTest()
-	{
-		HuffmanTree tree = new HuffmanTree(new byte[]{1,1,1,2,2,3,3,4,5,6});
-		Bits bits = new Bits();
-		
-		bits.add(true);
-		bits.add(false);
-		bits.add(true);
-		bits.add(true);
-		bits.add(false);
-		bits.add(false);
-		
-		System.out.println(tree.toByte(bits));
-	}
-	
-	@Test
-	public void fromByteTest()
-	{
-		HuffmanTree tree = new HuffmanTree(new byte[]{1,1,1,2,2,3,3,4,5,6});
-		Bits bits = new Bits();
-		byte node = (byte)6;
-		tree.fromByte(node, bits);
-		
-		System.out.println("Byte: " + node + ", Bit Value : " + bits +"\r\n");		
-	}
 	
 	@Test 
 	public void compressTest()
@@ -98,9 +66,10 @@ public class HuffmanTreeTest {
 			
 			byte[] compressedData = Files.readAllBytes(path);
 			decompressedData = compressor.decompress(tree, UNCOMPRESSED_IMAGE_SIZE, compressedData);
-			//System.out.println(Arrays.toString(decompressedData));
+
 			ByteArrayInputStream bais = new ByteArrayInputStream(decompressedData);
 			showImage(bais);
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
