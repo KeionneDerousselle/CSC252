@@ -16,17 +16,25 @@ public class AVLBasedPriorityQueue< T extends Comparable<T>> implements IPriorit
 
     @Override
     public T poll() {
-        return null;
+        AVLNode<T> node = getHighestPriority();
+        T data = (node == null)? null : node.getValue();
+
+        if(node != null)
+        {
+            this.tree.removeNode(node);
+        }
+
+        return data;
     }
 
     @Override
     public T peek() {
-        return getHighestPriority();
+        return getHighestPriority().getValue();
     }
 
-    private T getHighestPriority()
+    private AVLNode<T> getHighestPriority()
     {
-        T highestPriority = null;
+        AVLNode<T> highestPriority = null;
 
         if(this.tree.getRoot() != null)
         {
@@ -36,15 +44,21 @@ public class AVLBasedPriorityQueue< T extends Comparable<T>> implements IPriorit
         return highestPriority;
     }
 
-    private T getHighestPriority(AVLNode<T> root)
+    private AVLNode<T> getHighestPriority(AVLNode<T> root)
     {
         if(root.getLeftChild() == null)
         {
-            return root.getValue();
+            return root;
         }
         else
         {
             return getHighestPriority(root.getLeftChild());
         }
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.tree.toString();
     }
 }
