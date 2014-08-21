@@ -164,7 +164,7 @@
       <file leaf-file-name="HeapBasedPriorityQueue.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="0" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.47788697" vertical-offset="2331" max-vertical-offset="3145">
+            <state line="160" column="0" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.5964912" vertical-offset="2278" max-vertical-offset="3145">
               <folding />
             </state>
           </provider>
@@ -254,10 +254,9 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -342,9 +341,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="SearchEverywhereHistory" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2" />
+    <property name="last_opened_file_path" value="C:/" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -659,7 +658,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1080" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -672,14 +671,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885212" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12832801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1302999" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26718405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13249211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1016,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="58" selection-start="513" selection-end="513" vertical-scroll-proportion="0.24973767" vertical-offset="0" max-vertical-offset="3145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="205" column="2" selection-start="5530" selection-end="5530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5219">
@@ -1067,7 +1059,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="0" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.47788697" vertical-offset="2331" max-vertical-offset="3145">
+        <state line="160" column="0" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.5964912" vertical-offset="2278" max-vertical-offset="3145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="58" selection-start="513" selection-end="513" vertical-scroll-proportion="0.24973767" vertical-offset="0" max-vertical-offset="3145">
           <folding />
         </state>
       </provider>
@@ -1083,7 +1082,7 @@
               <type id="library" />
             </show-content>
           </artifact-editor>
-          <last-edited>Queued:jar</last-edited>
+          <last-edited>Queued.jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

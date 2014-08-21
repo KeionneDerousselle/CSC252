@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Queued:jar">
-    <output-path>$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2</output-path>
+  <artifact type="jar" name="Queued.jar">
+    <output-path>C:/</output-path>
     <root id="archive" name="Queued.jar">
       <element id="module-output" name="Queued" />
       <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/junit-4.10.jar" path-in-jar="/" />

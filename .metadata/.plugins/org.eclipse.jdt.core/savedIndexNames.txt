@@ -1,0 +1,19 @@
+INDEX VERSION 1.126+C:\Users\kderousselle\Documents\GitHub\CSC252\.metadata\.plugins\org.eclipse.jdt.core
+694900868.index
+605677451.index
+766873727.index
+281533725.index
+2923314025.index
+2195797467.index
+1366307325.index
+1153757329.index
+3400715200.index
+3345974110.index
+268168630.index
+2585219214.index
+3335072432.index
+3511417993.index
+3041156950.index
+2135541764.index
+2205056889.index
+3353951665.index
