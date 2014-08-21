@@ -51,6 +51,8 @@ public class AVLNode< T extends Comparable<T>>
             }
         }
 
+        balance();
+
         return added;
     }
 
@@ -86,11 +88,7 @@ public class AVLNode< T extends Comparable<T>>
             }
         }
 
-        //calc balance factor
-        //balance
-
-
-
+         balance();
 
         return removed;
     }
@@ -200,6 +198,89 @@ public class AVLNode< T extends Comparable<T>>
     {
         return (node.getRightChild() == null && node.getLeftChild() == null);
     }
+
+    private void balance()
+    {
+        int balanceFactor = getBalanceFactor();
+
+        if(balanceFactor < -1 || balanceFactor > 1)
+        {
+            boolean rightSideHeavy = balanceFactor < 0;
+            boolean isAStick;
+
+            if(rightSideHeavy) // if the right side is heavy a left rotation is necessary
+            {
+                isAStick = getRightChild().getBalanceFactor() < 0;
+
+                if(!isAStick)
+                {
+                    getRightChild().rotateRight();
+                }
+
+                rotateLeft();
+            }
+            else // if the left side is heavy a right rotation is necessary
+            {
+
+                isAStick = getLeftChild().getBalanceFactor() > 0;
+
+                if(!isAStick)
+                {
+                    getLeftChild().rotateLeft();
+                }
+                rotateRight();
+            }
+        }
+    }
+
+    private void rotateRight()
+    {
+        AVLNode<T> newRoot  = getLeftChild();
+        setLeftChild(newRoot.getRightChild());
+
+        AVLNode<T> currentRoot = new AVLNode<T>(getValue());
+        currentRoot.setLeftChild(getLeftChild());
+        currentRoot.setRightChild(getRightChild());
+
+        newRoot.setRightChild(currentRoot);
+
+        setValue(newRoot.getValue());
+        setLeftChild(newRoot.getLeftChild());
+        setRightChild(newRoot.getRightChild());
+
+
+    }
+    private void rotateLeft()
+    {
+
+        AVLNode<T> newRoot = getRightChild();
+        setRightChild(newRoot.getLeftChild());
+
+        AVLNode<T> currentRoot = new AVLNode<T>(getValue(), getLeftChild(), getRightChild());
+
+        newRoot.setLeftChild(currentRoot);
+
+        setValue(newRoot.getValue());
+        setLeftChild(newRoot.getLeftChild());
+        setRightChild(newRoot.getRightChild());
+
+    }
+
+    private int getBalanceFactor()
+    {
+        return findHeight(getLeftChild()) - findHeight(getRightChild());
+    }
+
+    private int findHeight(AVLNode<T> root)
+    {
+        if(root == null)
+        {
+            return -1;
+        }
+
+        return 1 + Math.max(findHeight(root.getLeftChild()), findHeight(root.getRightChild()));
+    }
+
     public void setValue(T value) {
         this.value = value;
     }

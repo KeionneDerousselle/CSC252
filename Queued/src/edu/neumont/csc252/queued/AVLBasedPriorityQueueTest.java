@@ -27,14 +27,12 @@ public class AVLBasedPriorityQueueTest {
     public void testPoll() throws Exception
     {
         AVLBasedPriorityQueue<Integer> priorityQueue = new AVLBasedPriorityQueue<Integer>();
+
         priorityQueue.offer(1);
-        priorityQueue.offer(20);
-        priorityQueue.offer(35);
-        priorityQueue.offer(48);
-        priorityQueue.offer(8);
-        priorityQueue.offer(7);
-        priorityQueue.offer(9);
-        priorityQueue.offer(59);
+        priorityQueue.offer(2);
+        priorityQueue.offer(3);
+        priorityQueue.offer(4);
+        priorityQueue.offer(5);
 
         System.out.println(priorityQueue);
         System.out.println(priorityQueue.poll());

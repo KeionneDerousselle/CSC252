@@ -10,4 +10,8 @@ public interface IPriorityQueue<T extends Comparable<T>>
     public T poll();
 
     public T peek();
+
+    public int size();
+
+    public boolean isEmpty();
 }

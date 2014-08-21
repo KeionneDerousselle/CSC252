@@ -7,11 +7,20 @@ package edu.neumont.csc252.queued;
 public class AVLBasedPriorityQueue< T extends Comparable<T>> implements IPriorityQueue<T>
 {
     private AVLTree<T> tree = new AVLTree<T>();
+    public int size;
 
     @Override
     public boolean offer(T data)
     {
-        return this.tree.addNode(data);
+        if(this.tree.addNode(data))
+        {
+            size++;
+            return  true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     @Override
@@ -21,7 +30,10 @@ public class AVLBasedPriorityQueue< T extends Comparable<T>> implements IPriorit
 
         if(node != null)
         {
-            this.tree.removeNode(node);
+            if(this.tree.removeNode(node))
+            {
+                size--;
+            }
         }
 
         return data;
@@ -30,6 +42,16 @@ public class AVLBasedPriorityQueue< T extends Comparable<T>> implements IPriorit
     @Override
     public T peek() {
         return getHighestPriority().getValue();
+    }
+
+    @Override
+    public int size() {
+        return this.size;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return this.size == 0 || this.tree.getRoot() == null;
     }
 
     private AVLNode<T> getHighestPriority()

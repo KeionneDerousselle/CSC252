@@ -159,6 +159,16 @@ public class HeapBasedPriorityQueue<T extends Comparable<T>> implements IPriorit
         return this.heap[1];
     }
 
+    @Override
+    public int size() {
+        return itemsInHeap;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return itemsInHeap == 0;
+    }
+
     public T[] getHeap() {
         return heap;
     }
