@@ -2,7 +2,7 @@ package edu.neumont.csc252.lab2;
 
 import java.util.ArrayList;
 
-public class Node<T> implements Comparable<Node<T>> 
+public class Node<T extends Comparable<T>> implements Comparable<Node<T>> 
 {
 	private ArrayList<T> value;
 	
@@ -99,7 +99,13 @@ public class Node<T> implements Comparable<Node<T>>
 		{
 			compare = -1;
 		}
+		
 		return compare;
+	}
+	
+	public boolean isLeaf()
+	{
+		return getLeftChild() == null && getRightChild() == null;
 	}
 	
 	public float getFrequency() {

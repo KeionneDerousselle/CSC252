@@ -1,10 +1,13 @@
 package edu.neumont.csc252.lab2;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
+import edu.neumont.csc252.queued.HeapBasedPriorityQueue;
+import edu.neumont.csc252.queued.IPriorityQueue;
 import edu.neumont.io.Bits;
 
 public class HuffmanTree
@@ -17,8 +20,9 @@ public class HuffmanTree
 	
 	private float[] byteFrequencies = new float[(BYTE_MAX + 1)* 2];
 	
-	private PriorityQueue<Node<Byte>> frequencyQueue = new PriorityQueue<Node<Byte>>();
-	
+	private IPriorityQueue<Node<Byte>> frequencyQueue = new HeapBasedPriorityQueue<Node<Byte>>(7);
+	//private IPriorityQueue<Node<Byte>> frequencyQueue = new AVLBasedPriorityQueue<Node<Byte>>();
+	//private PriorityQueue<Node<Byte>> frequencyQueue = new PriorityQueue<Node<Byte>>();
 	public HuffmanTree(byte[] data)
 	{
 		this.data = data;
@@ -33,6 +37,7 @@ public class HuffmanTree
 		prioritizeFrequencies();
 		createTree();
 	}
+	
 	
 	public byte[] getData() {
 		return data;
@@ -77,7 +82,7 @@ public class HuffmanTree
 				{
 					ArrayList<Byte> value = new ArrayList<Byte>();
 					value.add((byte)(i + BYTE_MIN));
-					frequencyQueue.add(new Node<Byte>(value, frequency));
+					frequencyQueue.offer(new Node<Byte>(value, frequency));
 				}
 				
 			}
@@ -95,8 +100,26 @@ public class HuffmanTree
 				}
 				else
 				{
+					
 					Node<Byte> leftChild = frequencyQueue.poll();
+
 					Node<Byte> rightChild = frequencyQueue.poll();
+
+				
+//					if(leftChild.compareTo(rightChild) == 0)
+//					{
+//						if(leftChild.isLeaf() && rightChild.isLeaf())
+//						{
+//							if(leftChild.getValue().get(0).compareTo(rightChild.getValue().get(0)) > 0)
+//							{
+//								Node<Byte> temp = rightChild;
+//								rightChild = leftChild;
+//								leftChild = temp;
+//								
+//							}
+//								
+//						}
+//					}
 					
 					ArrayList<Byte> values = new ArrayList<Byte>();
 					
@@ -105,7 +128,7 @@ public class HuffmanTree
 					
 					Node<Byte> parent = new Node<Byte>(values, rightChild.getFrequency() + leftChild.getFrequency(), leftChild, rightChild);
 					
-					frequencyQueue.add(parent);
+					frequencyQueue.offer(parent);
 				}
 				
 			}
@@ -184,3 +207,4 @@ public class HuffmanTree
 	}
 
 }
+
