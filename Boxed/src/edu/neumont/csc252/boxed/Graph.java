@@ -23,9 +23,21 @@ public class Graph
         return this.numOfVertices;
     }
 
-    public void edgeCount()
+    public int edgeCount()
     {
+        int eCount = 0;
+        for(int i = 0; i < verticeCount(); i++)
+        {
+            for(int j = i; j < verticeCount(); j++)
+            {
+                if(this.matrix[i][j] != 0)
+                {
+                    eCount++;
+                }
+            }
+        }
 
+        return eCount;
     }
 
     public int first(int vertex)
