@@ -55,6 +55,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxes.java" line="216" class="edu.neumont.csc252.boxed.DotsAndBoxes" package="edu.neumont.csc252.boxed">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -63,10 +80,10 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="Graph.java" pinned="false" current="true" current-in-tab="true">
+            <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/Graph.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="57" column="9" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.8716356" vertical-offset="127" max-vertical-offset="1955">
+                  <state line="51" column="0" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.33333334" vertical-offset="545" max-vertical-offset="1955">
                     <folding />
                   </state>
                 </provider>
@@ -92,12 +109,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DotsAndBoxes.java" pinned="false" current="false" current-in-tab="true">
+      <file leaf-file-name="DotsAndBoxes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3047" selection-end="3047" vertical-scroll-proportion="1.7738247" vertical-offset="321" max-vertical-offset="2635">
+            <state line="218" column="81" selection-start="7190" selection-end="7190" vertical-scroll-proportion="0.0" vertical-offset="3549" max-vertical-offset="4403">
               <folding>
-                <element signature="e#299#317#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#350#368#0" expanded="true" />
+                <element signature="e#6993#7002#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BFSGraphTraversal.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/BFSGraphTraversal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="24" selection-start="471" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DotsAndBoxesTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="149" column="10" selection-start="4199" selection-end="4199" vertical-scroll-proportion="3.5278552" vertical-offset="0" max-vertical-offset="2737">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,8 +158,9 @@
         <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DFSGraphTraversalTest.java" />
         <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DFSGraphTraversal.java" />
         <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/Point.java" />
-        <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxes.java" />
         <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/Graph.java" />
+        <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxes.java" />
+        <option value="$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxesTest.java" />
       </list>
     </option>
   </component>
@@ -212,6 +252,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -221,15 +262,37 @@
       <recent name="edu.neumont.csc252.boxed" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BFSGraphTraversalTest.testTraverse">
-    <configuration default="false" name="BFSGraphTraversalTest.testTraverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DotsAndBoxesTest.countChainsTest">
+    <configuration default="false" name="DotsAndBoxesTest.testAreMovesLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boxed" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.neumont.csc252.boxed" />
-      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.BFSGraphTraversalTest" />
-      <option name="METHOD_NAME" value="testTraverse" />
+      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.DotsAndBoxesTest" />
+      <option name="METHOD_NAME" value="testAreMovesLeft" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DotsAndBoxesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Boxed" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.neumont.csc252.boxed" />
+      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.DotsAndBoxesTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -250,14 +313,58 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DFSGraphTraversalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DotsAndBoxesTest.countDoubleCrossesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boxed" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.neumont.csc252.boxed" />
-      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.DFSGraphTraversalTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.DotsAndBoxesTest" />
+      <option name="METHOD_NAME" value="countDoubleCrossesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DotsAndBoxesTest.countCyclesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Boxed" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.neumont.csc252.boxed" />
+      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.DotsAndBoxesTest" />
+      <option name="METHOD_NAME" value="countCyclesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DotsAndBoxesTest.countChainsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Boxed" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.neumont.csc252.boxed" />
+      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc252.boxed.DotsAndBoxesTest" />
+      <option name="METHOD_NAME" value="countChainsTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -405,14 +512,20 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BFSGraphTraversalTest.testTraverse" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DFSGraphTraversalTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.testAreMovesLeft" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.countDoubleCrossesTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.countCyclesTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.countChainsTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BFSGraphTraversalTest.testTraverse" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DFSGraphTraversalTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.countChainsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.countCyclesTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.countDoubleCrossesTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DotsAndBoxesTest.testAreMovesLeft" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -430,7 +543,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -438,25 +551,50 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1582213" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48293692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10170394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.229576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48293692" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10170394" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.229576" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -483,18 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/BFSGraphTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="825" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="1173">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#374#389#0" expanded="true" />
-            <element signature="e#876#885#0" expanded="true" />
-            <element signature="e#935#944#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,15 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3047" selection-end="3047" vertical-scroll-proportion="1.7738247" vertical-offset="321" max-vertical-offset="2635">
-          <folding>
-            <element signature="e#299#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/GraphExample/src/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5217391" vertical-offset="504" max-vertical-offset="1479">
@@ -593,8 +710,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.8716356" vertical-offset="127" max-vertical-offset="1955">
+        <state line="51" column="0" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.33333334" vertical-offset="545" max-vertical-offset="1955">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="218" column="81" selection-start="7190" selection-end="7190" vertical-scroll-proportion="0.0" vertical-offset="3549" max-vertical-offset="4403">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#350#368#0" expanded="true" />
+            <element signature="e#6993#7002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/BFSGraphTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="24" selection-start="471" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/boxed/DotsAndBoxesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="10" selection-start="4199" selection-end="4199" vertical-scroll-proportion="3.5278552" vertical-offset="0" max-vertical-offset="2737">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

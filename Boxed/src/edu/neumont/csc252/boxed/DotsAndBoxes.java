@@ -1,6 +1,8 @@
 package edu.neumont.csc252.boxed;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by kderousselle on 8/26/14.
@@ -22,6 +24,8 @@ public class DotsAndBoxes
         this.coinsRows = rows +1;
         this.coinsColumns = columns +1;
 
+        addStringsToCoins();
+
     }
 
     private void addStringsToCoins()
@@ -35,27 +39,27 @@ public class DotsAndBoxes
             Point west = new Point(p.getX() - 1, p.getY());
             Point east = new Point(p.getX() + 1, p.getY());
 
-            if(pointWithinGraphBounds(north))
+            if(pointWithinGraphBounds(north) && (p.getX() > 0 && p.getX() < coinsRows -1))
             {
                 int nVertex = graphPointToVertex(north);
                 coins.addEdge(i, nVertex, 1);
             }
 
-            if(pointWithinGraphBounds(south))
+            if(pointWithinGraphBounds(south)  && (p.getX() > 0 && p.getX() < coinsRows -1))
             {
                 int sVertex = graphPointToVertex(south);
                 coins.addEdge(i, sVertex, 1);
             }
 
-            if(pointWithinGraphBounds(west))
+            if(pointWithinGraphBounds(west)  && (p.getY() > 0 && p.getY() < coinsColumns -1))
             {
                 int wVertex = graphPointToVertex(west);
                 coins.addEdge(i, wVertex, 1);
             }
 
-            if(pointWithinGraphBounds(east))
+            if(pointWithinGraphBounds(east)  && (p.getY() > 0 && p.getY() < coinsColumns -1))
             {
-                int eVertex = graphPointToVertex(south);
+                int eVertex = graphPointToVertex(east);
                 coins.addEdge(i, eVertex, 1);
             }
 
@@ -64,35 +68,45 @@ public class DotsAndBoxes
 
     public int drawLine(int player, int x1, int y1, int x2, int y2)
     {
+        Point maxPoint = null;
+        Point connectingPoint = null;
+
         int maxPointVertex = 0;
         int connectingPointVertex = 0;
+
         int score = 0;
 
         if(lineIsHorizontal(x1, y1, x2, y2))
         {
-            Point maxXPoint = findPointWithMaxX(x1, y1, x2, y2);
-            maxPointVertex = graphPointToVertex(maxXPoint);
+            maxPoint = findPointWithMaxX(x1, y1, x2, y2);
+            maxPointVertex = graphPointToVertex(maxPoint);
 
-            Point verticallyDown = new Point(maxXPoint.getX(), maxXPoint.getY()+1);
-            connectingPointVertex = graphPointToVertex(verticallyDown);
+            connectingPoint = new Point(maxPoint.getX(), maxPoint.getY()+1);
+            connectingPointVertex = graphPointToVertex(connectingPoint);
         }
         else if(lineIsVertical(x1, y1, x2, y2))
         {
-            Point maxYPoint = findPointWithMaxY(x1, y1, x2, y2);
-            maxPointVertex = graphPointToVertex(maxYPoint);
+            maxPoint = findPointWithMaxY(x1, y1, x2, y2);
+            maxPointVertex = graphPointToVertex(maxPoint);
 
-            Point horizontalAcross = new Point(maxYPoint.getX() +1, maxYPoint.getY());
-            connectingPointVertex = graphPointToVertex(horizontalAcross);
+            connectingPoint = new Point(maxPoint.getX() +1, maxPoint.getY());
+            connectingPointVertex = graphPointToVertex(connectingPoint);
         }
 
         coins.removeEdge(maxPointVertex, connectingPointVertex);
 
-        score = (coins.first(maxPointVertex) == coins.verticeCount()) ? score + 1 : score;
-        score = (coins.first(connectingPointVertex) == coins.verticeCount()) ?  score+1 : score;
+        //if vertices are not edges and all strings are cut
+        score = (coins.first(maxPointVertex) == coins.verticeCount()) && (graphPointNotOnBorder(maxPoint)) ? score + 1 : score;
+        score = (coins.first(connectingPointVertex) == coins.verticeCount()) && (graphPointNotOnBorder(connectingPoint)) ?  score+1 : score;
 
         playerScores.put(player, playerScores.containsKey(player) ? playerScores.get(player) + score : score);
 
         return score;
+    }
+
+    private boolean graphPointNotOnBorder(Point p)
+    {
+        return (p.getX() > 0 && p.getX() < coinsRows-1) && (p.getY() > 0 && p.getY() < coinsColumns -1);
     }
 
     public int score(int player)
@@ -144,6 +158,96 @@ public class DotsAndBoxes
 
     private int graphPointToVertex(Point p)
     {
-        return (p.getX() * coinsRows) + p.getY();
+        return (p.getY() * coinsRows) + p.getX();
+    }
+
+    public int countDoubleCrosses()
+    {
+        int doubleCrossCount = 0;
+        List<List<Integer>> bfsTraversal = new BFSGraphTraversal().traverse(coins);
+
+        for(int connectedComponent = 0;  connectedComponent < bfsTraversal.size(); connectedComponent++)
+        {
+            doubleCrossCount = (bfsTraversal.get(connectedComponent).size() == 2)? doubleCrossCount +1 : doubleCrossCount;
+        }
+
+        return doubleCrossCount;
+    }
+
+    public int countCycles()
+    {
+        int cycleCount = 0;
+
+        List<List<Integer>> dfsTraversal = new DFSGraphTraversal().traverse(coins);
+
+        for(int connectedComponent = 0;  connectedComponent < dfsTraversal.size(); connectedComponent++)
+        {
+            if(dfsTraversal.get(connectedComponent).size() >= 4 && dfsTraversal.get(connectedComponent).size() %2 == 0)
+            {
+                if(coins.isEdge(dfsTraversal.get(connectedComponent).get(0), dfsTraversal.get(connectedComponent).get(dfsTraversal.get(connectedComponent).size() -1)))
+                //if last vertex is a neighbor of first vertex
+                {
+                    boolean isCycle = true;
+
+                    for(int i = 0; i< dfsTraversal.get(connectedComponent).size() && isCycle; i++)
+                    {
+                        isCycle = coins.degree(dfsTraversal.get(connectedComponent).get(i)) == 2;
+                    }
+
+                    cycleCount = isCycle? cycleCount +1 : cycleCount;
+                }
+            }
+        }
+
+        return cycleCount;
+    }
+
+    public int countChains()
+    {
+        int chainCount = 0;
+
+        List<List<Integer>> dfsTraversal = new DFSGraphTraversal().traverse(coins);
+
+        for(int connectedComponent = 0;  connectedComponent < dfsTraversal.size(); connectedComponent++)
+        {
+            if(dfsTraversal.get(connectedComponent).size() > 2 && ! (coins.isEdge(dfsTraversal.get(connectedComponent).get(0), dfsTraversal.get(connectedComponent).get(dfsTraversal.get(connectedComponent).size() -1))))
+            {
+                ArrayList<Integer> potentialChainVertices = new ArrayList<Integer>();
+
+                for(int i = 0; i< dfsTraversal.get(connectedComponent).size(); i++)
+                {
+                    int currentVertex = dfsTraversal.get(connectedComponent).get(i);
+                     if(coins.degree(currentVertex) == 2)
+                     {
+                         potentialChainVertices.add(currentVertex);
+                     }
+                }
+
+                int chainLength = 0;
+                int previousVertex = potentialChainVertices.get(0);
+
+                for(int i = 1; i< potentialChainVertices.size(); i++)
+                {
+                    int currentVertex = potentialChainVertices.get(i);
+                    if(coins.isEdge(previousVertex, currentVertex))
+                    {
+                        chainLength++;
+
+                        if(chainLength ==2)
+                        {
+                            chainCount++;
+                        }
+                    }
+                    else
+                    {
+                        chainLength = 0;
+                    }
+
+                    previousVertex = currentVertex;
+                }
+            }
+        }
+
+        return chainCount;
     }
 }
