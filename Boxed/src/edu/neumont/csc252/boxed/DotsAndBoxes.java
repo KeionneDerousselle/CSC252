@@ -202,52 +202,50 @@ public class DotsAndBoxes
         return cycleCount;
     }
 
-    public int countChains()
+    public int countOpenChains()
     {
         int chainCount = 0;
 
-        List<List<Integer>> dfsTraversal = new DFSGraphTraversal().traverse(coins);
-
-        for(int connectedComponent = 0;  connectedComponent < dfsTraversal.size(); connectedComponent++)
+        for(int vertex = 0; vertex < coins.verticeCount(); vertex++)
         {
-            if(dfsTraversal.get(connectedComponent).size() > 2 && ! (coins.isEdge(dfsTraversal.get(connectedComponent).get(0), dfsTraversal.get(connectedComponent).get(dfsTraversal.get(connectedComponent).size() -1))))
+            int edgeCount = coins.degree(vertex);
+
+            if(edgeCount != 2 && edgeCount!= 0 && coins.getMark(vertex) == 0) // potential chain entrance
             {
-                ArrayList<Integer> potentialChainVertices = new ArrayList<Integer>();
-
-                for(int i = 0; i< dfsTraversal.get(connectedComponent).size(); i++)
+                for(int currentNeighborIndex = coins.first(vertex); currentNeighborIndex < coins.verticeCount(); currentNeighborIndex = coins.next(vertex, currentNeighborIndex)) //for each of its neighbors
                 {
-                    int currentVertex = dfsTraversal.get(connectedComponent).get(i);
-                     if(coins.degree(currentVertex) == 2)
-                     {
-                         potentialChainVertices.add(currentVertex);
-                     }
-                }
-
-                int chainLength = 0;
-                int previousVertex = potentialChainVertices.get(0);
-
-                for(int i = 1; i< potentialChainVertices.size(); i++)
-                {
-                    int currentVertex = potentialChainVertices.get(i);
-                    if(coins.isEdge(previousVertex, currentVertex))
+                    if(coins.degree(currentNeighborIndex) == 2) // if potential chain link
                     {
-                        chainLength++;
+                        int chainLength = getChainLength(currentNeighborIndex, 1); //count links in chain
 
-                        if(chainLength ==2)
+                        if(chainLength >= 3)
                         {
                             chainCount++;
                         }
                     }
-                    else
-                    {
-                        chainLength = 0;
-                    }
-
-                    previousVertex = currentVertex;
                 }
             }
         }
 
+
+        for(int vertex = 0; vertex < coins.verticeCount(); vertex++)
+        {
+            coins.setMark(vertex, 0);
+        }
         return chainCount;
+    }
+
+    private int getChainLength(int vertex, int chainLength)
+    {
+        coins.setMark(vertex, 1);
+
+        for(int currentNeighborIndex = coins.first(vertex); currentNeighborIndex < coins.verticeCount(); currentNeighborIndex = coins.next(vertex, currentNeighborIndex))
+        {
+            if(coins.degree(currentNeighborIndex) == 2 && coins.getMark(currentNeighborIndex) == 0)
+            {
+               chainLength = getChainLength(currentNeighborIndex, chainLength + 1);
+            }
+        }
+        return chainLength;
     }
 }

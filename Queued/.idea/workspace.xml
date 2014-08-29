@@ -61,91 +61,6 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="BinaryTree.java" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/BinarySearchDemo/src/BinaryTree.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="30" column="9" selection-start="414" selection-end="414" vertical-scroll-proportion="0.23913044" vertical-offset="323" max-vertical-offset="1105">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/BinarySearchDemo/src/Node.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/Node.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2108">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/Node.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873">
-                    <folding>
-                      <element signature="e#400#401#0" expanded="false" />
-                      <element signature="e#419#420#0" expanded="false" />
-                      <element signature="e#453#454#0" expanded="false" />
-                      <element signature="e#476#477#0" expanded="false" />
-                      <element signature="e#511#512#0" expanded="false" />
-                      <element signature="e#535#536#0" expanded="false" />
-                      <element signature="e#569#570#0" expanded="false" />
-                      <element signature="e#594#595#0" expanded="false" />
-                      <element signature="e#642#643#0" expanded="false" />
-                      <element signature="e#675#676#0" expanded="false" />
-                      <element signature="e#725#726#0" expanded="false" />
-                      <element signature="e#760#761#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="HuffmanTree.java" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanTree.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="24" column="5" selection-start="773" selection-end="773" vertical-scroll-proportion="0.23189926" vertical-offset="102" max-vertical-offset="3519">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="HuffmanCompressor.java" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanCompressor.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Queued" />
@@ -155,16 +70,16 @@
       <file leaf-file-name="IPriorityQueue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/IPriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state line="15" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeapBasedPriorityQueue.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HeapBasedPriorityQueue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="56" selection-start="155" selection-end="165" vertical-scroll-proportion="-1.1449631" vertical-offset="1051" max-vertical-offset="3145">
+            <state line="7" column="56" selection-start="155" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="3145">
               <folding />
             </state>
           </provider>
@@ -173,8 +88,12 @@
       <file leaf-file-name="HeapBasedPriorityQueueTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="51" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1156">
-              <folding />
+            <state line="3" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+              <folding>
+                <element signature="e#288#297#0" expanded="false" />
+                <element signature="e#756#765#0" expanded="false" />
+                <element signature="e#1471#1480#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,16 +101,16 @@
       <file leaf-file-name="AVLBasedPriorityQueue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="5" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+            <state line="50" column="5" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1581">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AVLBasedPriorityQueueTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AVLBasedPriorityQueueTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="7" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="597" max-vertical-offset="1411">
+            <state line="2" column="0" selection-start="36" selection-end="58" vertical-scroll-proportion="0.05362776" vertical-offset="0" max-vertical-offset="1411">
               <folding />
             </state>
           </provider>
@@ -200,7 +119,7 @@
       <file leaf-file-name="AVLTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="1564">
+            <state line="38" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1564">
               <folding>
                 <element signature="e#1064#1065#0" expanded="false" />
                 <element signature="e#1091#1092#0" expanded="false" />
@@ -212,14 +131,20 @@
       <file leaf-file-name="AVLNode.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="2" selection-start="5530" selection-end="5530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5219">
+            <state line="94" column="7" selection-start="2153" selection-end="2153" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="5100">
               <folding>
-                <element signature="e#7883#7884#0" expanded="true" />
-                <element signature="e#7915#7916#0" expanded="true" />
-                <element signature="e#7956#7957#0" expanded="true" />
-                <element signature="e#7989#7990#0" expanded="true" />
-                <element signature="e#8016#8017#0" expanded="true" />
-                <element signature="e#8044#8045#0" expanded="true" />
+                <element signature="e#7585#7586#0" expanded="false" />
+                <element signature="e#7619#7620#0" expanded="false" />
+                <element signature="e#7673#7674#0" expanded="false" />
+                <element signature="e#7715#7716#0" expanded="false" />
+                <element signature="e#7771#7772#0" expanded="false" />
+                <element signature="e#7815#7816#0" expanded="false" />
+                <element signature="e#7855#7856#0" expanded="false" />
+                <element signature="e#7887#7888#0" expanded="false" />
+                <element signature="e#7928#7929#0" expanded="false" />
+                <element signature="e#7961#7962#0" expanded="false" />
+                <element signature="e#7988#7989#0" expanded="false" />
+                <element signature="e#8016#8017#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -285,6 +210,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -323,8 +250,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +267,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="SearchEverywhereHistory" value="" />
-    <property name="last_opened_file_path" value="C:/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -355,7 +280,7 @@
       <recent name="edu.neumont.csc252.queued" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AVLBasedPriorityQueueTest.testPoll">
+  <component name="RunManager" selected="JUnit.AVLBasedPriorityQueueTest.testPeek">
     <configuration default="false" name="HeapBasedPriorityQueueTest.testOffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Queued" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -518,19 +443,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -556,6 +468,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -620,9 +545,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AVLBasedPriorityQueueTest.testPoll" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AVLBasedPriorityQueueTest.testPeek" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.HeapBasedPriorityQueueTest.testPoll" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AVLBasedPriorityQueueTest.testPeek" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AVLBasedPriorityQueueTest.testPoll" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.HeapBasedPriorityQueueTest.testOffer" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.AVLBasedPriorityQueueTest.testOffer" />
       </list>
@@ -659,7 +584,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -672,14 +597,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327818" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12832801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1302999" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3164426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -710,6 +635,68 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="155" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="3145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="51" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1156">
+          <folding>
+            <element signature="e#288#297#0" expanded="false" />
+            <element signature="e#756#765#0" expanded="false" />
+            <element signature="e#1471#1480#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="5" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="7" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="597" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1598">
+          <folding>
+            <element signature="e#1064#1065#0" expanded="false" />
+            <element signature="e#1091#1092#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="2" selection-start="5502" selection-end="5502" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="5304">
+          <folding>
+            <element signature="e#7585#7586#0" expanded="false" />
+            <element signature="e#7619#7620#0" expanded="false" />
+            <element signature="e#7673#7674#0" expanded="false" />
+            <element signature="e#7715#7716#0" expanded="false" />
+            <element signature="e#7771#7772#0" expanded="false" />
+            <element signature="e#7815#7816#0" expanded="false" />
+            <element signature="e#7855#7856#0" expanded="false" />
+            <element signature="e#7887#7888#0" expanded="false" />
+            <element signature="e#7928#7929#0" expanded="false" />
+            <element signature="e#7961#7962#0" expanded="false" />
+            <element signature="e#7988#7989#0" expanded="false" />
+            <element signature="e#8016#8017#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="5" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="3009">
           <folding />
         </state>
@@ -718,7 +705,11 @@
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1057" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1258">
-          <folding />
+          <folding>
+            <element signature="e#288#297#0" expanded="false" />
+            <element signature="e#756#765#0" expanded="false" />
+            <element signature="e#1471#1480#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,12 +741,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="17" selection-start="2149" selection-end="2149" vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="3944">
           <folding>
-            <element signature="e#7883#7884#0" expanded="true" />
-            <element signature="e#7915#7916#0" expanded="true" />
-            <element signature="e#7956#7957#0" expanded="true" />
-            <element signature="e#7989#7990#0" expanded="true" />
-            <element signature="e#8016#8017#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="false" />
+            <element signature="e#7619#7620#0" expanded="false" />
+            <element signature="e#7673#7674#0" expanded="false" />
+            <element signature="e#7715#7716#0" expanded="false" />
+            <element signature="e#7771#7772#0" expanded="false" />
+            <element signature="e#7815#7816#0" expanded="false" />
+            <element signature="e#7855#7856#0" expanded="false" />
+            <element signature="e#7887#7888#0" expanded="false" />
+            <element signature="e#7928#7929#0" expanded="false" />
+            <element signature="e#7961#7962#0" expanded="false" />
+            <element signature="e#7988#7989#0" expanded="false" />
+            <element signature="e#8016#8017#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,7 +774,11 @@
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="21" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="901">
-          <folding />
+          <folding>
+            <element signature="e#288#297#0" expanded="false" />
+            <element signature="e#756#765#0" expanded="false" />
+            <element signature="e#1471#1480#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,12 +810,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="56" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1411">
           <folding>
-            <element signature="e#7883#7884#0" expanded="true" />
-            <element signature="e#7915#7916#0" expanded="true" />
-            <element signature="e#7956#7957#0" expanded="true" />
-            <element signature="e#7989#7990#0" expanded="true" />
-            <element signature="e#8016#8017#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="false" />
+            <element signature="e#7619#7620#0" expanded="false" />
+            <element signature="e#7673#7674#0" expanded="false" />
+            <element signature="e#7715#7716#0" expanded="false" />
+            <element signature="e#7771#7772#0" expanded="false" />
+            <element signature="e#7815#7816#0" expanded="false" />
+            <element signature="e#7855#7856#0" expanded="false" />
+            <element signature="e#7887#7888#0" expanded="false" />
+            <element signature="e#7928#7929#0" expanded="false" />
+            <element signature="e#7961#7962#0" expanded="false" />
+            <element signature="e#7988#7989#0" expanded="false" />
+            <element signature="e#8016#8017#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,7 +843,11 @@
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="19" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="714">
-          <folding />
+          <folding>
+            <element signature="e#288#297#0" expanded="false" />
+            <element signature="e#756#765#0" expanded="false" />
+            <element signature="e#1471#1480#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -861,12 +872,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="56" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1411">
           <folding>
-            <element signature="e#7883#7884#0" expanded="true" />
-            <element signature="e#7915#7916#0" expanded="true" />
-            <element signature="e#7956#7957#0" expanded="true" />
-            <element signature="e#7989#7990#0" expanded="true" />
-            <element signature="e#8016#8017#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="false" />
+            <element signature="e#7619#7620#0" expanded="false" />
+            <element signature="e#7673#7674#0" expanded="false" />
+            <element signature="e#7715#7716#0" expanded="false" />
+            <element signature="e#7771#7772#0" expanded="false" />
+            <element signature="e#7815#7816#0" expanded="false" />
+            <element signature="e#7855#7856#0" expanded="false" />
+            <element signature="e#7887#7888#0" expanded="false" />
+            <element signature="e#7928#7929#0" expanded="false" />
+            <element signature="e#7961#7962#0" expanded="false" />
+            <element signature="e#7988#7989#0" expanded="false" />
+            <element signature="e#8016#8017#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -932,49 +949,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/BinarySearchDemo/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1734">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1734" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/BinarySearchDemo/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="9" selection-start="414" selection-end="414" vertical-scroll-proportion="0.23913044" vertical-offset="323" max-vertical-offset="1105">
-          <folding />
-        </state>
+        <state line="30" column="9" selection-start="414" selection-end="414" vertical-scroll-proportion="0.23913044" vertical-offset="323" max-vertical-offset="1105" />
       </provider>
     </entry>
     <entry file="file://H:/Algorithms and Data Structures/BinaryTreeExample/src/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360" />
       </provider>
     </entry>
     <entry file="file://H:/Algorithms and Data Structures/TheRedStapler/src/edu/neumont/csc252/lab1/OrgChart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326" />
       </provider>
     </entry>
     <entry file="file://H:/Algorithms and Data Structures/TheRedStapler/src/edu/neumont/csc252/lab1/MyOrgChart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="1456" max-vertical-offset="2550">
-          <folding />
-        </state>
+        <state line="35" column="13" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="1456" max-vertical-offset="2550" />
       </provider>
     </entry>
     <entry file="file://H:/Algorithms and Data Structures/TheRedStapler/src/edu/neumont/csc252/lab1/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="21" selection-start="2868" selection-end="2868" vertical-scroll-proportion="1.783555" vertical-offset="1126" max-vertical-offset="2873">
+        <state line="165" column="21" selection-start="2868" selection-end="2868" vertical-scroll-proportion="1.783555" vertical-offset="1126" max-vertical-offset="2873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanCompressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/IPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="5" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="5" selection-start="773" selection-end="773" vertical-scroll-proportion="0.23189926" vertical-offset="102" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="155" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="3145">
           <folding />
         </state>
       </provider>
@@ -989,85 +1032,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../AlgorithmsAndDataStructures2/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873">
-          <folding>
-            <element signature="e#400#401#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#476#477#0" expanded="false" />
-            <element signature="e#511#512#0" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#760#761#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanCompressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="2" selection-start="5530" selection-end="5530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5219">
+        <state line="94" column="7" selection-start="2153" selection-end="2153" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="5100">
           <folding>
-            <element signature="e#7883#7884#0" expanded="true" />
-            <element signature="e#7915#7916#0" expanded="true" />
-            <element signature="e#7956#7957#0" expanded="true" />
-            <element signature="e#7989#7990#0" expanded="true" />
-            <element signature="e#8016#8017#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="false" />
+            <element signature="e#7619#7620#0" expanded="false" />
+            <element signature="e#7673#7674#0" expanded="false" />
+            <element signature="e#7715#7716#0" expanded="false" />
+            <element signature="e#7771#7772#0" expanded="false" />
+            <element signature="e#7815#7816#0" expanded="false" />
+            <element signature="e#7855#7856#0" expanded="false" />
+            <element signature="e#7887#7888#0" expanded="false" />
+            <element signature="e#7928#7929#0" expanded="false" />
+            <element signature="e#7961#7962#0" expanded="false" />
+            <element signature="e#7988#7989#0" expanded="false" />
+            <element signature="e#8016#8017#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/IPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="983" max-vertical-offset="1411">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="5" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1564">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="51" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1156">
-          <folding />
+        <state line="3" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding>
+            <element signature="e#288#297#0" expanded="false" />
+            <element signature="e#756#765#0" expanded="false" />
+            <element signature="e#1471#1480#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Zipped/src/edu/neumont/csc252/lab2/HuffmanTree.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/AVLBasedPriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="773" selection-end="773" vertical-scroll-proportion="0.23189926" vertical-offset="102" max-vertical-offset="3519">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/neumont/csc252/queued/HeapBasedPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="155" selection-end="165" vertical-scroll-proportion="-1.1449631" vertical-offset="1051" max-vertical-offset="3145">
+        <state line="2" column="0" selection-start="36" selection-end="58" vertical-scroll-proportion="0.05362776" vertical-offset="0" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>
